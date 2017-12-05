@@ -25,32 +25,31 @@
 ul {
     list-style: none;
     padding: 0;
-
 }
 
-ul.inner {
+.inner {
         padding-left: 1em;
         overflow: hidden;
-        display: none;
-}
-
-ul li {
+      
+       
+    }
+  
+    li {
         margin: .5em 0;
       
         
-        }
-
-li a.toggle {
+    }
+	
+	a.toggle {
             width: 100%;
             display: block;
             background: rgba(0,0,0,0.78);
             color: #fefefe;
             padding: .75em;
-            border-radius: 0.5em;
+            border-radius: 0.15em;
             transition: background .3s ease;
-}
-    
-li a.toggle:hover {
-                background: rgba(0, 0, 0, 1);
-            }	
-
+          
+            &:hover {
+                background: rgba(0, 0, 0, 0.9);
+            }
+        }
