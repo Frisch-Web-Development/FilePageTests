@@ -22,3 +22,35 @@
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+ul.inner {
+        padding-left: 1em;
+        overflow: hidden;
+        display: none;
+}
+
+ul li {
+        margin: .5em 0;
+      
+        
+        }
+
+li a.toggle {
+            width: 100%;
+            display: block;
+            background: rgba(0,0,0,0.78);
+            color: #fefefe;
+            padding: .75em;
+            border-radius: 0.5em;
+            transition: background .3s ease;
+}
+    
+li a.toggle:hover {
+                background: rgba(0, 0, 0, 1);
+            }	
+
