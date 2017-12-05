@@ -1,5 +1,7 @@
 $(document).ready(function() {
     
+    $('.toggle').parent().parent().find('li .inner').slideUp(0);
+	
 $('.toggle').click(function(e) {
   	e.preventDefault();
   

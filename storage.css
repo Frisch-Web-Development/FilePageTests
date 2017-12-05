@@ -29,13 +29,11 @@ li {
 a.toggle {
     width: 100%;
     display: block;
-    background: rgba(0, 0, 0, 0.78);
+    background: rgba(0, 0, 0, 0.5);
     color: #fefefe;
     padding: .75em;
     border-radius: 0.15em;
- border:2px solid green;
-    outline-color:red;  
-    outline-style:none;
+	border:2px solid black;
     transition: background .3s ease;
 
 }
