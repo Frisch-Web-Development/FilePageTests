@@ -68,6 +68,22 @@ $('.toggle').click(function(e) {
         }, 700);
     });
 }
+
+$(function() {
+            $('.card').draggable({ revert: true });
+            $('.toggle').droppable({
+               hoverClass: 'active',
+               drop: function(e, ui) {
+                  $(this).html(ui.draggable.remove().html());
+                  $(this).droppable('destroy');
+                  $( this )
+                  .addClass( "ui-state-highlight" )
+                  .find( "p" )
+                  .html( "i'm destroyed!" );
+               }
+            });
+         });
+
 });
 
 

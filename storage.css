@@ -42,8 +42,6 @@ a.toggle {
 	border:2px solid red;
     transition: background .3s ease;
 	text-decoration: none !important;
-	
-
 }
 
 a.toggle:hover{
