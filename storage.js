@@ -71,16 +71,13 @@ $('.toggle').click(function(e) {
 
 $(function() {
             $('.card').draggable({ revert: true });
+			            $('.toggle').draggable({ revert: true });
+
             $('.toggle').droppable({
                hoverClass: 'active',
                drop: function(e, ui) {
-				   $('#myMovingModal').modal('toggle');
-                  $(this).html(ui.draggable.remove().html());
-                  $(this).droppable('destroy');
-                  $( this )
-                  .addClass( "ui-state-highlight" )
-                  .find( "p" )
-                  .html( "i'm destroyed!" );
+				  $('#myMovingModal').modal('toggle');
+                  // make calculations and ajax calls here!
                }
             });
          });
