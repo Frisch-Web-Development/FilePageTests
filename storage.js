@@ -74,6 +74,7 @@ $(function() {
             $('.toggle').droppable({
                hoverClass: 'active',
                drop: function(e, ui) {
+				   $('#myMovingModal').modal('toggle');
                   $(this).html(ui.draggable.remove().html());
                   $(this).droppable('destroy');
                   $( this )
@@ -85,5 +86,3 @@ $(function() {
          });
 
 });
-
-
